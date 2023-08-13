@@ -16,7 +16,7 @@ const Header = () => {
           className='inline-flex items-center'
         >
           <div className='flex items-center justify-center w-12 h-12 rounded-full bg-cyan-200'>
-            <svg
+          <svg
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 32 32'
               fill='currentColor'
@@ -26,7 +26,7 @@ const Header = () => {
             </svg>
           </div>
           <span className='ml-2 text-xl font-bold tracking-wide text-gray-800 '>
-            HeroGadget
+          Smart Job Board
           </span>
         </Link>
         <ul className='items-center hidden space-x-8 lg:flex'>
@@ -47,7 +47,7 @@ const Header = () => {
               title='Shop'
               className={({ isActive }) => (isActive ? 'active' : 'default')}
             >
-              Shop
+              JOBS
             </NavLink>
           </li>
           <li>

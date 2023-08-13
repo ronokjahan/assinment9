@@ -10,6 +10,9 @@ import ErrorPage from './components/ErrorPage'
 import Shop from './components/Shop'
 import Cart from './components/Cart'
 import { productsAndCartData } from './loaders/getCart&ProductsData'
+import Job from './components/Cards/Job/Job'
+import JobDeatils from './components/Cards/Job/JobDeatils'
+import ButtonDetails from './components/ButtonDetails'
 
 const router = createBrowserRouter([
   {
@@ -22,6 +25,22 @@ const router = createBrowserRouter([
       { path: '/shop', element: <Shop /> },
       { path: '/cart', element: <Cart /> },
       { path: '/about', element: <About /> },
+     
+      { path: '/Job', element: <Job></Job>,
+    loader:()=>fetch('https://jsonplaceholder.typicode.com/posts/1/comments')
+    },
+    {
+      path:'/job/:jobId',
+      element:<JobDeatils></JobDeatils>,
+      loader:({params})=>fetch(`https://jsonplaceholder.typicode.com/posts/${params.jobId}`)
+      
+      
+    },
+    {
+      path:'/',
+      element:<ButtonDetails></ButtonDetails>,
+      loader:()=>fetch('https://jsonplaceholder.typicode.com/posts/1/comments')
+    }
     ],
   },
 ])

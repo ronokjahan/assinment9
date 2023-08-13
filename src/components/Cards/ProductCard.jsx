@@ -1,24 +1,39 @@
 import React from 'react'
+import ButtonDetails from '../ButtonDetails'
+import AllJob from './Job/AllJob'
+import { Link } from 'react-router-dom'
+import JobDeatils from './Job/JobDeatils'
 
-const ProductCard = ({ product, handleAddToCart }) => {
+const ProductCard = ({ product, handleAddToCart,id}) => {
+
+  
+ 
+  
   const { name, picture, price, category } = product
+  
   return (
     <div className='bg-gray-100 p-6 rounded shadow-lg'>
       <img
-        className='object-cover w-full h-56 mb-6 rounded shadow-lg md:h-64 xl:h-80'
+        className=''
         src={picture}
         alt=''
       />
       <p className='mb-2 text-xl font-bold leading-none sm:text-2xl'>{name}</p>
       <p className='text-gray-700 '>Category: {category}</p>
-      <p className='text-gray-700 font-bold'>Price: {price}$</p>
+      <p className='text-gray-700 font-bold'></p>
+      
+    
       <button
         onClick={() => handleAddToCart(product)}
         type='button'
         className='btn-primary w-full block'
       >
-        Add To Cart
+        Add To JOBS
       </button>
+      <button  className='btn-primary w-full block' ><Link to={`/job/${id}`}>View Details</Link></button>
+      
+     
+      
     </div>
   )
 }

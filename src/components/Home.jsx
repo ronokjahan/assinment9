@@ -1,23 +1,26 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import heroImg from '../assets/hero.jpg'
+import icon from '../assets/Logo/accounts 1.png'
+import HomeMain from './HomeMain'
+import ButtonDetails from './ButtonDetails'
+import man from '../assets/Logo/P3OLGJ1 copy 1.png'
 
 const Home = () => {
   return (
     <section>
-      <div className='bg-gray-200'>
-        <div className='my-container flex flex-col items-center pb-24 text-center lg:pb-56 text-gray-900'>
+      <div className='bg-orange-400 flex'>
+        <div className='my-container flex flex-col items-center pb-24 text-center lg:pb-56 text-blue-700'>
           <h1 className='text-2xl w-full lg:leading-tight sm:text-4xl lg:text-6xl lg:max-w-3xl title-text'>
-            Welcome To HeroGadget
+          One Step Closer To Your Dream Job
           </h1>
           <p className='my-6 text-xs sm:text-base md:text-lg max-w-2/3 md:max-w-xl max-w-2xl text-gray-900'>
-            Best E-commerce platform for buying high quality Smart Home
-            Appliances at extremely affordable Price.
+          Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.
           </p>
           <div className='flex flex-wrap justify-center'>
             <Link to='/shop'>
               <button type='button' className='btn-primary'>
-                Shop Now
+                JOBS NOW
               </button>
             </Link>
             <Link to='/about'>
@@ -27,13 +30,18 @@ const Home = () => {
             </Link>
           </div>
         </div>
+        <img src={man} alt="" />
       </div>
-      <img
-        src={heroImg}
-        alt=''
-        className='w-5/6 mx-auto mb-12 -mt-12 lg:-mt-40 rounded-lg shadow-md bg-gray-500'
-      />
+     
+     <section>
+      
+      <HomeMain></HomeMain>
+     </section>
+     {/* buttton-------------------- */}
+     
     </section>
+    
+   
   )
 }
 

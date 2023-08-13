@@ -44,7 +44,7 @@ const Modal = ({ isOpen, setIsOpen }) => {
                 </Dialog.Title>
                 <div className='mt-2'>
                   <p className='text-sm text-gray-500'>
-                    You have items in cart. Complete your order before stock
+                    You have items in cart. Applie your Job before stock
                     out!
                   </p>
                 </div>

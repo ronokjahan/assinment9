@@ -26,7 +26,7 @@ const Shop = () => {
 
     setCart(newCart)
     addToDb(product.id)
-    toast.success('Product Added! 🛒', { autoClose: 500 })
+    toast.success('Job Added! 🛒', { autoClose: 500 })
   }
 
   return (

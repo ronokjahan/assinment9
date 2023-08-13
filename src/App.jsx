@@ -10,6 +10,7 @@ export const CartContext = createContext([])
 const App = () => {
   let [isOpen, setIsOpen] = useState(false)
   const { products, initialCart } = useLoaderData()
+ 
 
   const cartAlert = sessionStorage.getItem('alert')
 
