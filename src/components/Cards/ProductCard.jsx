@@ -3,6 +3,7 @@ import ButtonDetails from '../ButtonDetails'
 import AllJob from './Job/AllJob'
 import { Link } from 'react-router-dom'
 import JobDeatils from './Job/JobDeatils'
+import Rmot from './Rmot'
 
 const ProductCard = ({ product, handleAddToCart,id}) => {
 
@@ -22,7 +23,7 @@ const ProductCard = ({ product, handleAddToCart,id}) => {
       <p className='text-gray-700 '>Category: {category}</p>
       <p className='text-gray-700 font-bold'></p>
       
-    
+    <Rmot></Rmot>
       <button
         onClick={() => handleAddToCart(product)}
         type='button'

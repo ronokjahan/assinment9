@@ -6,7 +6,7 @@ const About = () => {
     <section className='bg-gray-100 text-gray-900'>
       <div className='container flex flex-col items-center p-4 mx-auto md:p-8'>
         <h1 className='text-3xl font-bold leading-none text-center sm:text-4xl'>
-          Help Center
+          Help Center contuck us
         </h1>
         <div className='relative mt-6 mb-12'>
           <span className='absolute inset-y-0 flex items-center pl-2 mx-auto'>
@@ -69,7 +69,7 @@ const About = () => {
               to='/support'
               className='flex items-center justify-center p-4 sm:py-8 lg:py-12'
             >
-              My orders
+              My JObs
             </Link>
           </div>
           <div className='hidden w-full divide-y sm:flex-col sm:flex divide-gray-700'>

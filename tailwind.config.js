@@ -6,6 +6,7 @@ export default {
       animation: {
         text: 'text 5s ease infinite',
       },
+      // this tawlinwind filie
       keyframes: {
         text: {
           '0%, 100%': {
